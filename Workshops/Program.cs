@@ -11,6 +11,7 @@ namespace Workshops
             Console.WriteLine("Nina");
             Console.WriteLine("Kariauli");
             Console.WriteLine("Nina Kariauli");
+
             var myName = "Nina ";
             myName = "Nino ";
             var mySurname = "Kariauli";
@@ -21,6 +22,7 @@ namespace Workshops
             Console.WriteLine(myName + mySurname);
             Console.WriteLine(fullName1);
             Console.WriteLine(fullName2);
+
             var myName1 = "Nina";
             var mySurname1 = "Kariauli";
             var fullNAme3 = $"Hello everyone, my name is {myName1} {mySurname1}.";
@@ -29,52 +31,58 @@ namespace Workshops
             var fSurname = "Kariauli";
             var name = string.Concat(fName, fSurname);
             Console.WriteLine(name);
+
             var csharpStudent = "Nina Kariauli";
-            var csharpStudentsage = 30;
-            Console.WriteLine(csharpStudent +" " +"is"+" " + csharpStudentsage+ " "+"years old");
-            Console.WriteLine($"{csharpStudent} is {csharpStudentsage} years old");
+            var csharpStudentsAge = 30;
+            Console.WriteLine(csharpStudent +" " +"is"+" " + csharpStudentsAge+ " "+"years old");
+            Console.WriteLine($"{csharpStudent} is {csharpStudentsAge} years old");
+
             var firstName = 'N';
             var lastName = 'K';
             Console.WriteLine(firstName);
             Console.WriteLine(lastName);
-            var Initials = $"My initials are {firstName} {lastName}";
-            Console.WriteLine(Initials);
+            var initials = $"My initials are {firstName} {lastName}";
+            Console.WriteLine(initials);
             var myProfession = "IT Business Analyst";
             var myEmployer = "Information Technology Agency";
             var carrierInfo = $"I work at {myEmployer} as an {myProfession}";
+
             Console.WriteLine("Indicate Your Fullname:");
             var usersFullname = Console.ReadLine();
             Console.WriteLine("User's Fullname is:"+"Nina Kariauli");
             Console.WriteLine("Indicate Your Age");
-            int usersAge = Convert.ToInt32(Console.ReadLine());
+            var usersAge = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("User's Age is:"+"30");
+
             int myCurrentage;
             myCurrentage = 30;
             Console.WriteLine(myCurrentage);
-            int myAge = 30;
+            var myAge = 30;
             myAge = 29;
             Console.WriteLine(myAge);
-            int myAgenow = 30;
-            int myFriendsagenow = 28;
+            var myAgenow = 30;
+            var myFriendsagenow = 28;
             Console.WriteLine(myAgenow>myFriendsagenow);
             Console.WriteLine(myAgenow<myFriendsagenow);   
-            double myWeight = 65.4;
+
+            var myWeight = 65.4;
             Console.WriteLine(myWeight);
-            double myWeight2 = (int)myWeight;
+            var myWeight2 = (int)myWeight;
             Console.WriteLine(myWeight2);
-            int myAgeinmonths = 30 * 12 + 1;
-            Console.WriteLine(myAgeinmonths);
-            int myAgeindays = myAgeinmonths * 365 - 4;
-            Console.WriteLine(myAgeindays);
-            int myAgeinhours = myAgeindays * 24;
-            double myAgeinhoursdouble = Convert.ToDouble(myAgeinhours);
-            Console.WriteLine(myAgeinhoursdouble);
-            Console.WriteLine(myAgeinhours);
-            int hoursInweeks = 7 * 24;
-            Console.WriteLine(hoursInweeks);
-            double myAgeinweeksdouble = (myAgeinhoursdouble+1)/168;
-            Console.WriteLine(myAgeinweeksdouble);
-            Console.WriteLine(Convert.ToInt32(myAgeinweeksdouble));
+
+            var myAgeInMonths = 30 * 12 + 1;
+            Console.WriteLine(myAgeInMonths);
+            var myAgeInDays = myAgeInMonths * 365 - 4;
+            Console.WriteLine(myAgeInDays);
+            var myAgeInHours = myAgeInDays * 24;
+            var myAgeInHoursDouble = Convert.ToDouble(myAgeInHours);
+            Console.WriteLine(myAgeInHoursDouble);
+            Console.WriteLine(myAgeInHours);
+            var hoursInWeeks = 7 * 24;
+            Console.WriteLine(hoursInWeeks);
+            var myAgeInWeeksDouble = (myAgeInHoursDouble+1)/168;
+            Console.WriteLine(myAgeInWeeksDouble);
+            Console.WriteLine(Convert.ToInt32(myAgeInWeeksDouble));
         }
     }
 }
