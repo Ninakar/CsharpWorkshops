@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshops", "Workshops\Workshops.csproj", "{802F6D86-40EB-420A-A9B1-8D1DE4162C28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpWorkshop1", "Workshops\CsharpWorkshop1.csproj", "{802F6D86-40EB-420A-A9B1-8D1DE4162C28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
