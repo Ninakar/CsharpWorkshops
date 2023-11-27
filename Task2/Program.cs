@@ -1,4 +1,6 @@
-﻿namespace Task2
+﻿using System;
+
+namespace Task2
 {
     internal class Program
     {
@@ -39,19 +41,19 @@
             Console.WriteLine("% Ramainder after Division");
 
             Console.WriteLine("Enter the 1st variable");
-            var nummer1 = Convert.ToInt32(Console.ReadLine());
+            var nummer1 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Use arithmetic sign");
-            char symbol = Convert.ToChar(Console.ReadLine());
+            var symbol = Convert.ToChar(Console.ReadLine());
 
             Console.WriteLine("Enter the 2nd variable");
-            var nummer2 = Convert.ToInt32(Console.ReadLine());
+            var nummer2 = Convert.ToDouble(Console.ReadLine());
 
             if (symbol == '+')
             {
                 Console.WriteLine(nummer1 + nummer1);
             }
-            else if (symbol == '_')
+            else if (symbol == '-')
             {
                 Console.WriteLine(nummer1 - nummer1);
             }
@@ -74,13 +76,13 @@
 
             Console.WriteLine("The second Calculator");
             Console.WriteLine("Enter the 1st variable:");
-            var nummerO1 = Convert.ToInt32(Console.ReadLine());
+            var nummerO1 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Use arithmetic sign");
-            char operationSymbol = Convert.ToChar(Console.ReadLine());
+            var operationSymbol = Convert.ToChar(Console.ReadLine());
 
             Console.WriteLine("Enter the 2nd variable:");
-            var nummerO2 = Convert.ToInt32(Console.ReadLine());
+            var nummerO2 = Convert.ToDouble(Console.ReadLine());
 
             switch (operationSymbol)
             {
@@ -99,7 +101,7 @@
                 case '%':
                     Console.Write($"The answer is {nummerO1 % nummerO2}");
                     break;
-                case 'F':
+                default:
                     Console.WriteLine("Incorrect manipulation");
                     break;
             }
